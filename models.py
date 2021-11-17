@@ -76,7 +76,7 @@ def plot_rocs(dataset, models, preds):
     plt.show()
     return fig
 
-def plot_bar(title, models, acc, labels, nn_acc=None):
+def plot_bar(title, models, acc, labels=None, nn_acc=None):
     if nn_acc:
         plt.bar(
             [model.__str__().split('(')[0] for model in models]+labels,
